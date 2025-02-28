@@ -6,27 +6,18 @@
     <title>Portfolio Personnel</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        .btn-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 20px;
-            margin-top: 50px;
-            width: 100%;
-            flex-wrap: nowrap; /* Empêche les boutons de passer à la ligne */
-        }
-        
         .btn-circle {
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 150px;
-            height: 150px;
+            width: 120px;
+            height: 120px;
             background-color: #2c3e50;
             color: white;
             text-decoration: none;
             font-weight: bold;
             border-radius: 50%;
+            position: absolute;
             text-align: center;
             transition: background 0.3s ease-in-out;
         }
@@ -59,25 +50,23 @@
 </head>
 <body>
     <header>
-        <h1>Mon Portfolio</h1>
         <nav>
             <ul>
                 <li><a href="portfolio.html">Accueil</a></li>
                 <li><a href="cv.html">CV</a></li>
-                <li><a href="travaux.html">Travaux</a></li>
                 <li><a href="publications.html">Publications</a></li>
+                <li><a href="travaux.html">Travaux</a></li>
             </ul>
         </nav>
     </header>
     
     <main>
         <section>
-            <h2>Bienvenue</h2>
-            <p>Je suis [Ton Nom], passionné par [ton domaine]. Découvrez mon parcours et mes réalisations.</p>
         </section>
-        <a href="cv.html" class="btn-circle" data-hover-image style="--hover-image: url('hover-image3.jpg');">CV</a>
-        <a href="publications.html" class="btn-circle" data-hover-image style="--hover-image: url('cosmic_cliffs.png');">Publis</a>
-        <a href="travaux.html" class="btn-circle" data-hover-image style="--hover-image: url('hover-image2.jpg');">Travaux</a>
+        <a href="cv.html" class="btn-circle" data-hover-image style="--hover-image: url('hover-image4.jpg'); top: 50%; left: 65%;">Stage Police Scientifique</a>
+        <a href="cv.html" class="btn-circle" data-hover-image style="--hover-image: url('hover-image3.jpg'); top: 50%; left: 65%;">Stage Alzheimer</a>
+        <a href="publications.html" class="btn-circle" data-hover-image style="--hover-image: url('cosmic_cliffs.png'); top: 50%; left: 35%;">Projet de recherche modèle microscopique plantes</a>
+        <a href="travaux.html" class="btn-circle" data-hover-image style="--hover-image: url('hover-image2.jpg'); top: 50%; left: 50%;">Mémoire épidémiologie</a>
     </main>
     
     <footer>
