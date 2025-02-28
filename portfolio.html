@@ -5,6 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Personnel</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .btn-circle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 120px;
+            height: 120px;
+            background-color: #2c3e50;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 50%;
+            position: absolute;
+            text-align: center;
+            transition: background 0.3s ease-in-out;
+        }
+        
+        .btn-circle[data-hover-image] {
+            position: relative;
+        }
+        
+        .btn-circle:hover {
+            color: transparent;
+        }
+        
+        .btn-circle:hover::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        .btn-circle[data-hover-image]:hover::after {
+            background-image: var(--hover-image);
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -24,6 +66,9 @@
             <h2>Bienvenue</h2>
             <p>Je suis [Ton Nom], passionné par [ton domaine]. Découvrez mon parcours et mes réalisations.</p>
         </section>
+        <a href="cv.html" class="btn-circle" data-hover-image style="--hover-image: url('hover-image3.jpg'); top: 50%; left: 65%;">CV</a>
+        <a href="publications.html" class="btn-circle" data-hover-image style="--hover-image: url('cosmic_cliffs.png'); top: 50%; left: 35%;">Publis</a>
+        <a href="travaux.html" class="btn-circle" data-hover-image style="--hover-image: url('hover-image2.jpg'); top: 50%; left: 50%;">Travaux</a>
     </main>
     
     <footer>
