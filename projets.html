@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" sizes="32x32" href="favicon.ico">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="portfolio.html">Accueil</a></li>
+                <li><a href="cv_simon_bure_fr.pdf" target="_blank">CV</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="ecrits.html">Écrits</a></li>
+                <li><a href="https://www.instagram.com/syyfall/" target="_blank">Photos</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="projet" onclick="openModal('Stage de recherche de M2 à l\'Institut Camille Jordan', 'Pour mon stage de fin d\'étude à l\'INSA de Lyon, j\'ai passé 6 mois sous la supervision de Laurent Pujo-Menjouet')">
+            <h3>Modélisation des protéines impliquées dans la maladie d'Alzheihmer</h3>
+            <img src="stage_icj.png" alt="Image du projet 1">
+        </div>
+
+        <div class="projet" onclick="openModal('Stage de recherche au Laboratoire de la Police Scientifique de Lyon', 'Description détaillée du projet 1')">
+            <h3>Amélioration du portrait robot génétique au Laboratoire de la Police Scientifique</h3>
+            <img src="" alt="Image du projet">
+        </div>
+
+        <div class="projet" onclick="openModal('Mémoire de M2 sur l\'apprentissage par renforcement', 'Description détaillée du projet 1')">
+            <h3>Apprentissage par renforcement guidé par LLM pour mimer l'intelligence humaine</h3>
+            <img src="" alt="Image du projet">
+        </div>
+
+        <div class="projet" onclick="openModal('Projet de recherche de Master 2', 'Description détaillée du projet 1')">
+            <h3>Modélisation probabiliste d'écosystèmes semi-arides et émergence de structures spatiales</h3>
+            <img src="" alt="Image du projet">
+        </div>
+
+        
+        
+        <!-- Carte avec les détails des projets et les liens associés -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2 id="modal-title"></h2>
+                <p id="modal-description"></p>
+            </div>
+        </div>
+
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Simon Buré - Sous License MIT -  <a href="https://www.linkedin.com/in/simon-bur%C3%A9-59642024b/" target="_blank" class="footer-icon">
+            <i class="fa-brands fa-linkedin"></i></a> <a href="https://github.com/SimonBure" target="_blank" class="footer-icon">
+                <i class="fa-brands fa-github"></i></a> </p>
+            
+    </footer>
+</body>
+</html>
