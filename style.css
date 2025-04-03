@@ -70,6 +70,8 @@ a {
 
 .btn-circle {
     display: inline-flex;
+    vertical-align: middle;
+
     color: var(--secondary-color);
     justify-content: center;  /* Centre le texte horizontalement */
     align-items: center;      /* Centre le texte verticalement si nécessaire */
@@ -86,15 +88,16 @@ a {
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     border: 2px solid transparent; /* Bordure transparente par défaut */ /* Effet au survol */
 
-    margin: 30px    ;  /* Espacement entre les boutons */
+    margin: 20px    ;  /* Espacement entre les boutons */
 }
 
 .btn-circle i {
-    font-size: auto; /* Ajuste la taille de l'icône */
+    font-size: 4rem; /* Ajuste la taille de l'icône */
+    color: var(--secondary-color); /* Couleur de l'icône */
 }
 
 .btn-circle:hover {
-    color: transparent;
+    color: transparent; /* Texte transparent au survol */
     background-image: var(--hover-image);
     background-size: cover;
     background-position: center;
