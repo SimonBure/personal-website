@@ -25,30 +25,30 @@
     </header>
     
     <main>
-        <div class="projet">
-            <h3>Le Tout</h3>
-            <img src=".png" alt="Image du projet">
+        <div class="projet" onclick="openModal('Prédiction de l\'âge biologique à partir de la méthylation de l\'ADN', 'descriptions/publis/lps.txt', 'lps.pdf')">
+            <h3>DNA Methylation-based Age Prediction from Blood Samples of French Child and Adult Individuals</h3>
+            <img src="publis.png" alt="Image">
         </div>
 
-        <div class="projet">
-            <h3>Auteurs Oubliés</h3>
-            <img src=".png" alt="Image du projet">
-        </div>
-
-        <div class="projet">
-            <h3>Un Amour de rêve</h3>
-            <img src=".png" alt="Image du projet">
-        </div>
-
-        <div class="projet">
-            <h3>Nouvel Art dans l'ère du temps</h3>
-            <img src=".png" alt="Image du projet">
+        <div class="projet" onclick="openModal('Prédiction de la prédisposition au cancer à partir de la sensibilité aux rayons X', 'descriptions/publis/icj.txt', 'icj.pdf')">
+            <h3>Prediction of Cancer Proneness under Influence of X-rays with Four DNA Mutability and/or Three Cellular Proliferation Assays</h3>
+            <img src="publis.png" alt="Image">
         </div>
 
     </main>
+
+    <!-- Carte avec les détails des projets et les liens associés -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+            <a id="modal-download" href="#" target="_blank" class="modal-link">Télécharger le document</a>
+        </div>
+    </div>
     
     <footer>
-        <p>&copy; 2024 Simon Buré - Fais quelque part sur un pâle point bleu flottant dans l'espace - Sous License MIT -  <a href="https://www.linkedin.com/in/simon-bur%C3%A9-59642024b/" target="_blank" class="footer-icon">
+        <p>&copy; 2024 Simon Buré - Fais quelque sur un pâle point bleu flottant dans l'espace - Sous License MIT -  <a href="https://www.linkedin.com/in/simon-bur%C3%A9-59642024b/" target="_blank" class="footer-icon">
             <i class="fa-brands fa-linkedin"></i></a> <a href="https://github.com/SimonBure" target="_blank" class="footer-icon">
                 <i class="fa-brands fa-github"></i></a> </p>
             

@@ -161,8 +161,8 @@ a {
 .modal {
     display: none; /* Cachée par défaut */
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 0px;
+    left: 0px;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
@@ -172,23 +172,39 @@ a {
 
 .modal-content {
     background: white;
-    padding: 20px;
     border-radius: 10px;
-    width: auto; /* Adapts to 90% of the screen width */
-    max-width: 90%; /* Maximum width of 400px */
+    width: auto;
+    max-width: 90%; /* Maximum width of 90% of the sceen */
     text-align: center;
     position: relative;
+    padding: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Bouton de fermeture */
-.close {
+.modal .close {
     position: absolute;
-    top: 10px;
-    right: 15px;
-    font-size: 20px;
+    top: 0px;
+    right: 10px;
+    font-size: 25px;
+    font-weight: bold;
     cursor: pointer;
-    color: #333;
+    color: var(--primary-color);
+}
+
+.modal-link {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 15px;
+    border: 2px solid var(--accent-color); /* Bordure transparente par défaut */ /* Effet au survol */
+    transition: color 0.3s ease-in-out;
+}
+
+.modal-link:hover {
+    text-decoration: underline;
+    border-color: var(--primary-color); /* Couleur de surbrillance */
 }
 
 .profile-pic {
