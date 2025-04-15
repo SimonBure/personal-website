@@ -77,10 +77,11 @@ a {
     align-items: center;      /* Centre le texte verticalement si nécessaire */
     text-align: center;
     text-decoration: none;
+    font-size: 1.2rem;
     font-weight: bold;
 
-    width: 80px;
-    height: 80px;
+    width: 130px;
+    height: 130px;
     background-color: var(--accent-color);
     border-radius: 50%;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
@@ -216,7 +217,7 @@ a {
 
 /* Contenu principal */
 main {
-    padding: 20px;
+    padding: 50px;
     text-align: center;
 }
 
