@@ -1,17 +1,17 @@
 
-function openModal(title, textFile, downloadLink) {
+function openModal(title, file, downloadLink) {
     document.getElementById("modal-title").textContent = title;
     
     // Charger le fichier texte via fetch()
-    fetch(textFile)
+    fetch(file)
         .then(response => {
             if (!response.ok) {
                 throw new Error("Erreur de chargement du fichier : " + response.statusText);
             }
             return response.text();
         })
-        .then(text => {
-            document.getElementById("modal-description").textContent = text;
+        .then(html => {
+            document.getElementById("modal-description").innerHTML = html;
             document.getElementById("modal-description").style.display = "block"; // Afficher la description
         })
         .catch(error => {

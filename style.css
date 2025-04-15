@@ -88,7 +88,7 @@ a {
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     border: 2px solid transparent; /* Bordure transparente par défaut */ /* Effet au survol */
 
-    margin: 20px    ;  /* Espacement entre les boutons */
+    margin: 20px;  /* Espacement entre les boutons */
 }
 
 .btn-circle i {
@@ -108,7 +108,7 @@ a {
     transform: translateY(-5px); /* Légère élévation au survol */
 }
 
-.btn-circle[data-hover-image] {  
+.btn-circle[data-hover-image] {
     --hover-image: url('image.jpg'); /* Spécifie l'image */
 }
 
@@ -174,7 +174,7 @@ a {
     background: white;
     border-radius: 10px;
     width: auto;
-    max-width: 90%; /* Maximum width of 90% of the sceen */
+    max-width: 60%;
     text-align: center;
     position: relative;
     padding: 20px;
@@ -213,7 +213,6 @@ a {
     border-radius: 50%;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
-
 
 /* Contenu principal */
 main {
