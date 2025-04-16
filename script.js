@@ -24,7 +24,6 @@ function openModal(title, file, downloadLink) {
     if (downloadLink) {
         downloadButton.href = downloadLink;
         downloadButton.style.display = "block"; // Afficher le lien
-        downloadButton.textContent = "Télécharger le rapport";
     } else {
         downloadButton.style.display = "none"; // Cacher si pas de document
     }
