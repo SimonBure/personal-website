@@ -42,12 +42,18 @@ nav ul li a:hover {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Permet au corps de prendre toute la hauteur disponible */
     font-family: Fira sans, sans-serif;
-    margin: 0;
-    padding: 0;
     background-color: var(--secondary-color);
     color: var(--text-color);
     padding-bottom: auto;
+}
+
+main {
+    height: 100%;
+    margin: 0;
 }
 
 /* En-tête */
@@ -85,7 +91,7 @@ section {
 
 /* Pied de page */
 footer {
-    position: relative;
+    position: static;
     display: flex;
     justify-content: center;  /* Centre horizontalement */
     align-items: center;      /* Centre verticalement */
@@ -94,12 +100,16 @@ footer {
     height: auto;
     width: 100%;
     bottom: 0;
-    padding: 0 10px;
 }  
 
 footer small {
     color: #aaa;
     font-size: 0.5em;
+}
+
+.footer-icon {
+    font-size: 25px;  /* Taille de l'icône */
+    color: white;
 }
 
 .btn-circle {
@@ -145,11 +155,6 @@ footer small {
 
 .btn-circle[data-hover-image] {
     --hover-image: url('image.jpg'); /* Spécifie l'image */
-}
-
-.footer-icon {
-    font-size: 25px;  /* Taille de l'icône */
-    color: white;
 }
 
 .intro {
