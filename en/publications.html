@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" sizes="32x32" href="../favicon.ico">
+    <script src="../script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="https://kdrive.infomaniak.com/app/share/1584212/d4b0c448-e055-4d71-8a88-14ffc20c6cad" target="_blank">CV</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+            <a href="../publications.html" class="lang-toggle">🇫🇷 version</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="projet" onclick="openModal('Prediction of Cancer Proneness from X-ray Sensitivity', '../descriptions/en/publications/icj.html', 'https://www.mdpi.com/2072-6694/16/18/3188')">
+            <h3>Prediction of Cancer Proneness under Influence of X-rays</h3>
+            <img src="../images/publi_icj.png" alt="Image">
+        </div>
+
+        <div class="projet" onclick="openModal('Biological Age Prediction from DNA Methylation', '../descriptions/en/publications/lps.html', 'https://www.hilarispublisher.com/open-access/dna-methylationbased-age-prediction-from-blood-samples-of-french-child-and-adult-individuals.pdf')">
+            <h3>DNA Methylation-based Age Prediction from Blood Samples of French Child and Adult Individuals</h3>
+            <img src="../images/publi_lps.png" alt="Image">
+        </div>
+
+    </main>
+
+    <!-- Card with project details and associated links -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+            <a id="modal-download" href="#" target="_blank" class="modal-link">Download the publication</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Simon Buré — Made with ❤️ in Paris 🇫🇷 — Code under MIT license* — <a href="https://www.linkedin.com/in/simon-bur%C3%A9-59642024b/" target="_blank" class="footer-icon">
+            <a href="https://www.linkedin.com/in/simon-bur%C3%A9-59642024b/" target="_blank" class="footer-icon"><i class="fa-brands fa-linkedin"></i></a> <a href="https://github.com/SimonBure" target="_blank" class="footer-icon"><i class="fa-brands fa-github"></i></a>
+        <br>
+        <small>* The MIT license only applies to the source code. Textual content and PDF documents remain protected by copyright.</small>
+    </footer>
+</body>
+</html>
