@@ -256,3 +256,28 @@ footer small {
     border-radius: 50%;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
+
+/* Language toggle button */
+.lang-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 0.9rem;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.lang-toggle:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: var(--primary-color);
+    color: white;
+}
