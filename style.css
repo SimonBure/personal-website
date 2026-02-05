@@ -101,6 +101,7 @@ footer {
     background-color: var(--primary-color);
     color: white;           /* Texte blanc */
     width: 100vw;
+    height: 4vw;
     padding: 10px 0;
     z-index: 999;
 }  
