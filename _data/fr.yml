@@ -3,7 +3,7 @@ nav:
   home_url: "/"
   projects: "Projets"
   projects_url: "/projects/"
-  projects_desc_url: "/projects/descriptions"
+  projects_desc_url: "/projects/descriptions/"
 
 profiles: "Profils"
 
