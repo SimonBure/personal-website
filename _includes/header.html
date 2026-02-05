@@ -1,0 +1,12 @@
+{% assign t = site.data[page.lang] %}
+<header>
+        <nav>
+            <ul>
+                <li><a href="{{ t.nav.home_url}}"> {{ t.nav.home }} </a></li>
+                <li><a href="{{ site.cv }}" target="_blank">CV</a></li>
+                <li><a href="{{ t.nav.projects_url }}"> {{ t.nav.projects }}</a></li>
+            </ul>
+
+            <a href="{{ t.lang_button.version_url }}" class="lang-toggle">{{ t.lang_button.version }}</a>
+        </nav>
+</header>

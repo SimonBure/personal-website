@@ -1,1 +1,5 @@
 uncompressed-png/
+vendor/
+.bundle/
+_site/
+.jekyll-cache/

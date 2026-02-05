@@ -1,0 +1,19 @@
+title: Simon Buré
+cv: "https://kdrive.infomaniak.com/app/share/1584212/d4b0c448-e055-4d71-8a88-14ffc20c6cad"
+scholar: "https://scholar.google.com/citations?user=wqJgLZIAAAAJ&hl=fr&oi=ao"
+philpapers: "https://philpeople.org/profiles/simon-bure"
+github: "https://github.com/SimonBure"
+linkedin: "https://www.linkedin.com/in/simon-bur%C3%A9-59642024b/"
+profile_pic: "/images/generated_pp.jpg"
+images_url: "/images/"
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      lang: fr
+      layout: default
+  - scope:
+      path: "en"
+    values:
+      lang: en

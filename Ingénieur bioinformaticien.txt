@@ -1,9 +1,0 @@
-# Intérêts
-En une question : Comment fonctionne l'Univers ? Mais il a fallu faire des choix de vie, alors plus précisément :
-- Comment faire apprendre à la machine ?
-- Comment modéliser des systèmes vivants ?
-- Peut-on créer une vie artificielle ?
-- Comment s'inspirer du vivant pour créer de meilleurs systèmes ?
-- Les sciences mathématiques ou informatiques pour la biologie.
-- La philosophie des sciences et de la connaissance.
-- La philosophie éthique.

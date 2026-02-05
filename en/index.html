@@ -1,49 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simon Buré</title>
-    <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="icon" type="image/x-icon" sizes="32x32" href="/favicon.ico">
-</head>
+---
+layout: default
+title: Home
+lang: en
+---
 
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="/en/">Home</a></li>
-                <li><a href="https://kdrive.infomaniak.com/app/share/1584212/d4b0c448-e055-4d71-8a88-14ffc20c6cad" target="_blank">CV</a></li>
-                <li><a href="/en/publications/">Publications</a></li>
-                <li><a href="/en/projects/">Projects</a></li>
-            </ul>
-            <a href="/" class="lang-toggle">🇫🇷 version</a>
-        </nav>
-    </header>
+<section class="intro">
+    <h1>Welcome on my webpage!</h1>
+    <img src="{{ site.profile_pic }}" alt="Photo de profil" class="profile-pic">
+    <p>PhD Student @ <b>Mines Paris-PSL</b> since November 2025</p>
+    <p>Control Theory — Optimization — Machine Learning — Medicine</p>
+    <a href="{{ site.cv }}" target="_blank"> My curriculum</a>
+    <h3>Research Interests</h3>
+    <p>
+        <li>Mathematical modeling applied to medicine</li>
+        <li>Artificial Life & Evolution</li>
+        <li>Complex Systems</li>
+        <li>Intelligence modeling & AI</li>
+    </p>
+</section>
 
-    <main>
-        <section class="intro">
-            <h1>Welcome to my web page!</h1>
-            <img src="/images/generated_pp.jpg" alt="Profile picture" class="profile-pic">
-            <p>Here are gathered the significant projects I have completed throughout my career, my studies, and my personal passions.</p>
-        </section>
-        <br>
-        <h2>Science & Research</h2>
-        <a href="https://kdrive.infomaniak.com/app/share/1584212/d4b0c448-e055-4d71-8a88-14ffc20c6cad" target="_blank" class="btn-circle" data-hover-image style="--hover-image: url('/images/generated_pp.jpg');">CV</a>
-        <a href="/en/publications/" class="btn-circle" data-hover-image style="--hover-image: url('/images/publis.png');">Publis</a>
-        <a href="/en/projects/" class="btn-circle" data-hover-image style="--hover-image: url('/images/projets.png');">Projects</a>
-        <br>
-        <h2>LinkedIn & Github</h2>
-        <a href="https://www.linkedin.com/in/simon-bur%C3%A9-59642024b/" target="_blank" class="btn-circle"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
-        <a href="https://github.com/SimonBure" target="_blank" class="btn-circle"><i class="fa-brands fa-github"></i></a>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Simon Buré — Made with ❤️ in Paris 🇫🇷 — Code under MIT license* — <a href="https://www.linkedin.com/in/simon-bur%C3%A9-59642024b/" target="_blank" class="footer-icon">
-            <a href="https://www.linkedin.com/in/simon-bur%C3%A9-59642024b/" target="_blank" class="footer-icon"><i class="fa-brands fa-linkedin"></i></a> <a href="https://github.com/SimonBure" target="_blank" class="footer-icon"><i class="fa-brands fa-github"></i></a>
-        <br>
-        <small>* The MIT license only applies to the source code. Textual content and PDF documents remain protected by copyright.</small>
-    </footer>
-</body>
-</html>
+{% include profiles.html %}
+<br>
+{% include reports.html %}

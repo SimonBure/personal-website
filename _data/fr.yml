@@ -1,0 +1,19 @@
+nav:
+  home: "Accueil"
+  home_url: "/"
+  projects: "Projets"
+  projects_url: "/projects/"
+  projects_desc_url: "/projects/descriptions"
+
+profiles: "Profils"
+
+reports: "Rapports académiques"
+
+
+lang_button: 
+  version: "Version 🇬🇧"
+  version_url: "/en/"
+
+footer:
+  made: "2025 Simon Buré — Fais avec ❤️ à Paris 🇫🇷 — Code sous licence MIT*"
+  license: "La licence MIT ne s'applique qu'au code source. Les contenus textuels et documents pdf restent protégés par les droits d'auteurs."
