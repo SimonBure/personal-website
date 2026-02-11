@@ -1,3 +1,8 @@
 {% assign t = site.data[page.lang] %}
+<head>
+  <!-- Add this line to preload the image -->
+  <link rel="preload" href="/images/projets.webp" as="image">
+</head>
+
 <h2>{{ t.reports }}</h2>
-<a href="{{ t.nav.projects_url }}" class="btn-circle" data-hover-image style="--hover-image: url('/images/projets.png');"> {{ t.nav.projects }}</a>
+<a href="{{ t.nav.projects_url }}" class="btn-circle" data-hover-image style="--hover-image: url('/images/projets.webp');"> {{ t.nav.projects }}</a>
